@@ -1,0 +1,25 @@
+Ejercicio 11
+
+- Modelar la clase "Parking" donde se permita contar los autos ingresados en un estacionamiento y verificar el estado del mismo.
+- Para los autos modelar una clase "Car" con, al menos, los atributos patente y marca. La patente se usará como dentificador único de un auto.
+- Usar al menos 1 vez los enumeradores select y map.
+- Prohibido usar puts (o similares) dentro de las clases.
+
+Se necesita:
+1 - Poder registrar el ingreso de un auto al estacionamiento. Validar que sea un auto y no permitir el ingreso si el estacionamiento está lleno.
+2 - Poder registrar el egreso de un auto del estacionamiento.
+3 - Poder consultar la cantidad de lugares ocupados actualmente.
+4 - Poder consultar la cantidad de lugares libres actualmente.
+5 - Poder consultar el porcentaje de ocupación actual.
+6 - Poder consultar si el estacionamiento se encuentra lleno.
+7 - Llevar un registro de la cantidad de veces que cada auto ingresó al estacionamiento alguna vez. Dicho registro no debe ser accesible por fuera de la clase, ni para leer ni para escribir.
+8 - Llevar un registro de las diferentes marcas de autos y cuántas veces ingresaron al estacionamiento. Dicho registro no debe ser accesible por fuera de la clase, ni para leer ni para escribir.
+9 - Poder consultar mediante la patente, cuántas veces ingresó al estacionamiento un determinado auto.
+10 - Poder consultar cuántas veces ingresaron autos de una determinada marca.
+11 - Poder consultar las patentes de los autos que ingresaron al menos un X número de veces (sólo una lista con las patentes sin las cantidades de cada uno).
+12 - Poder consultar el top 3 de marcas que tuvieron más autos ingresados. Devolver un hash mostrando la marca y la cantidad, ordenado por cantidad de mayor a menor y asegurándose que la marca se muestre capitalizada (primera letra en mayúscula y el resto en minúscula).
+
+parking.rb
+car.rb
+
+Lanzar una excepcion cuando quiera ingresar un auto duplicado y una cuando el parking este lleno. Solo "raise".

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Comparador CodeAcademy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="text-center">
+        <h1><%= @title %></h1>
+    </div>
+    <div class="text-center">
+          <img src="/images/matematica.gif">
+    </div>
+    <div class="text-center">
+        <h5>Expresión ---> Operación </h5>
+        A y B son iguales --> A * B ///
+        A es mayor que B --> A - B  ///
+        A es menor que B --> A + B
+    </div>
+      
+    <%= yield %>
+
+  </body>
+</html>

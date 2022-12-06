@@ -1,0 +1,14 @@
+factura=Factura.new('23 de Octubre de 2019',1003)
+
+item=Item.new('Coca',75)
+factura.agregar_item(item)
+item=Item.new('Jabon',60)
+factura.agregar_item(item)
+item=Item.new('Jugo',15)
+factura.agregar_item(item)
+item=Item.new('Pan',35)
+factura.agregar_item(item)
+item=Item.new('Soda',45)
+factura.agregar_item(item)
+item=Item.new('Detergente',55)
+

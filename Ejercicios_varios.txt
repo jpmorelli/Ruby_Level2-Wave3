@@ -1,0 +1,167 @@
+# \<Code Academy> Nivel 2
+## Ruby Exercises
+> Happy Coding!
+
+1. Escribir una clase que permita modelar un **Contador**, con las siguientes características:
+   * Obtener valor actual
+   * Incrementar el valor en 1
+   * Decrementar el valor en 1
+   * Incrementar el valor en x
+   * Decrementar el valor en x
+   * Asignar un valor inicial al contador
+
+2. Modelar un **Comparador** que permita ingresar dos números (A y B) e imprima por pantalla el resultado dependiendo de la operación de la siguiente tabla:
+
+      | Expresión  | Operación |
+      | ---------- | --------- |
+      | A y B son iguales  | A * B |
+      | A es mayor que B  | A - B |
+      | A es menor que B  | A + B |
+
+3. Modelar una clase que nos permita realizar las siguientes verificaciones sobre un número entero:
+   * Comprobar si es primo
+   * Hallar su factorial
+   * Imprimir su tabla de multiplicar
+
+4. Modelar la clase **Rectangulo** de modo tal que permita calcular el area y el perímetro de la figura.
+
+5. Escribir una clase Cuenta Corriente, con las siguientes características:
+   * Obtener el saldo
+   * Debitar un monto
+   * Acreditar un monto
+
+   Verificar que es posible:
+   * Crear Cuentas Corriente
+   * Operar sobre las Cuentas Corrientes
+
+6. Escribir una clase **Temperatura** capaz de almacenar y devolver un mismo valor, expresado en diferentes unidades de medida (Celsius, Farenheit, Kelvin).
+>Tips:
+La unidad de Celsius = La unidad de Kelvin.
+0° C = 273.15 K
+-273.15° C = 0 K
+Para convertir entre Celsius y Farenheit:
+T(°C) = (T(°F) - 32) / 1.8 , entonces  T(°F) = T(°C) × 1.8 + 32
+
+7. Modelar una clase con un array de N números enteros, se desea poder realizar los siguientes calculos:
+   * Calcular el promedio entero.
+   * Reemplazar todos los números que ocupan las posiciones pares por el promedio calculado.
+   * Reemplazar el mayor número del array por el promedio calculado.
+   * Buscar un número en el array y devolver su posición, caso contrario devolver nulo.
+   * Un metodo que reciba como parametro un número y obtener un nuevo array con todos los números menores e iguales al número que se ingresó. Sino, devolver un array vacio.
+
+8. Modelar una clase con una estructura Hash donde se tenga como key el nombre de un pais y como Value a su capital. Crear metodos las siguientes operaciones:
+   * Listar todas las capitales de paises que comiencen con "B"
+   * Listar los paises que tengan capitales que terminen con "a"
+   * Listar los paises que tengan capitales con nombres mayor a 8 caracteres
+
+9. Modelar una clase se inicialize con una frase y tenga un metodo **contar_vocales** que devuela un hash con las vocales incluidas en dicha frase como keys junto con la frecuencia de aparicion de cada una de ellas como values.
+
+10. Modelar una clase con una estructura hash donde se tengan como key los apellidos de los alumnos y como value un array con las notas de tres parciales. Crear metodos para averiguar:
+      * Qué alumnos se sacaron más de 7 en todos los parciales.
+      * Qué alumnos se sacaron menos de 4 en todos los parciales.
+      * Cuántos alumnos se sacaron más de 7 en al menos dos parciales.
+      * El/los alumno/s con mejor promedio.
+      * El/los alumno/s con peor promedio.
+
+11. Modelar la clase Parking donde se permita contar los autos ingresados en un estacionamiento y verificar el estado del mismo Prohibido usar puts (o similares) dentro de las clases.
+      * Para los autos modelar una clase Car con, al menos, los atributos patente y marca. La patente se usará como identificador único de un auto.
+      * Usar al menos 1 vez los enumeradores select y map.
+
+      Se debe poder:
+      * Registrar el ingreso de un auto al estacionamiento. Validar que sea un auto y no permitir el ingreso si el estacionamiento está lleno.
+      * Poder registrar el egreso de un auto del estacionamiento.
+      * Poder consultar la cantidad de lugares ocupados actualmente.
+      * Poder consultar la cantidad de lugares libres actualmente.
+      * Poder consultar el porcentaje de ocupación actual.
+      * Poder consultar si el estacionamiento se encuentra lleno.
+      * Llevar un registro de la cantidad de veces que cada auto ingresó al estacionamiento alguna vez. Dicho registro no debe ser accesible por fuera de la clase, ni para leer ni para escribir.
+      * Llevar un registro de las diferentes marcas de autos y cuántas veces ingresaron al estacionamiento. Dicho registro no debe ser accesible por fuera de la clase, ni para leer ni para escribir.
+      * Poder consultar mediante la patente, cuántas veces ingresó al estacionamiento un determinado auto.
+      * Poder consultar cuántas veces ingresaron autos de una determinada marca.
+      * Poder consultar las patentes de los autos que ingresaron al menos un X número de veces (sólo una lista con las patentes, sin las cantidades de cada uno).
+      * Poder consultar el top 3 de marcas que tuvieron más autos ingresados. Devolver un hash mostrando la marca y la cantidad, ordenado por cantidad de mayor a menor y asegurándose que la marca se muestre capitalizada (primera letra en mayúscula y el resto en minúscula).
+
+12. Crear una clase **Abreviador**
+      * La clase tiene que tener un método "abreviar" que toma una palabra y la abrevia.
+      * La clase se debe poder manejar por defecto las abreviaturas "Señor" => "Sr.", "Señora" => "Sra." y "Señore" => "Sre."
+      * La clase tiene que tener metodos para:
+        - Agregar una abreviatura
+        - Eliminar una abreviatura
+        - Listar todas las abreviaturas.
+
+      Usando una segunda clase que almacene la cantidad de usos de cada abreviatura
+      * Agregar un metodo que liste la o las abreviatura más utilizadas.
+      * Agregar un método que liste todas las abreviaturas que nunca se usaron.
+
+13. Modelar las clases necesarias para que un sistema de facturación cumpla con los siguientes requerimientos:
+      * Modela factura debe tener numero de factura, fecha, total.
+      * modela item debe tener descripcion y precio.
+      * Se debe poder agregar items a la factura.
+      * Se debe poder calcular el total gastado hasta el momento.
+      * Se debe poder obtener un array con la descripcion de cada item de la factura.
+      * Se debe poder eliminar items.
+      * Se debe poder imprimir el total de items de una factura.
+      * Se debe poder calcular el total a pagar.
+
+14. Modelar la clase Persona con el DNI, Nombre, Apellido y un array con Cuentas Corriente (Ejercicio 4).
+      * Se debe poder agregar/eliminar cuentas hasta un maximo de 3 cuentas por persona.
+      * Se debe poder calcular el estado de a persona, "En regla" o "Morosa" si alguna de las cuentas del usuario se encuentra con saldo negativo.
+
+15. Modelar las clases necesarias para un sistema de información de un curso que cumpla con los siguientes requerimientos:
+      * Modela alumnos deben tener nombre, apellido, y legajo.
+      * Modela asignaturas deben contar con un nombre, y un código de materia.
+      * Modela cursos que contienen un conjunto de alumnos y un nombre que los identifica.
+      * Se debe poder calcular el promedio de un alumno y del curso.
+      * Se debe poder generar una lista de los alumnos de un curso y si aprobaron o no (La nota con la que se aprueba es un 7).
+
+      Se debe poder:
+      * Inicializar un curso, con su listado de alumnos y materias.
+      * Se debe poder ingresar las calificaciones de cada alumno en 4 asignaturas (Matemática, Lengua, Sociales, Naturales).
+      * Poder acceder a toda la funcionalidad implementada por las clases.
+
+
+16. Implementar la clase **Trivia**, compuesta por un conjunto de elementos de la clase **Pregunta**. Toda Trivia debe ser creada indicando la cantidad de preguntas que tendrá.
+
+      Las Preguntas deben tener una serie de **respuestas** asociadas, de las cuales sólo una puede ser la correcta.
+
+      Además, cada pregunta tiene una clasificación (Cine, Música, Deporte, Política).
+
+      Debemos poder:
+      * Agregar/Remover una respuesta dentro de una pregunta.
+      * Cambiar la respuesta correcta de una pregunta.
+      * Cambiar la categoría de una pregunta.
+      * Averiguar de cuántas preguntas está conformada la trivia.
+      * Saber cuántas preguntas hay de una cierta categoría.
+      * Listar las opciones de una cierta pregunta.
+      * Agregar/Remover una pregunta.
+      * Agregar categorías.
+      * Validar si una respuesta es la correcta para su pregunta.
+      * Proveer un vector con las respuestas contestadas por un usuario, y calcular el puntaje logrado en la trivia.
+
+      Se debe poder inicializar las Preguntas, una Trivia, y hacer todas las operaciones que se describieron más arriba.
+
+17. Modelar una clase que permita modelar un **Triatlón**, el mismo debe tener un nombre y la cantidad de participantes.
+Modelar una clase **Atleta** que modele un participante del Triatlón. Cada **Atleta** tiene un nombre, apellido y edad. Se solcita:
+      * Que la clase pueda agregar y eliminar Atletas del Triatlón.
+      * Que la clase pueda inicializar y editar los tiempos de cada disciplina de cada Atleta.
+      * Que la clase calcule el promedio de edad de los Atletas que participan en el Triatlón
+      * Que la clase calcule quién fue el ganador de la competencia y con qué tiempo (gana el que hizo el menor tiempo total, sumando las tres disciplinas).
+      * Que la clase permita consultar el nombre y tiempo total de los participantes en orden ascendente.
+
+      Se debe poder inicializar los Atletas, un Triatlón, y hacer todas las operaciones que se describieron más arriba.
+> Nota: https://es.wikipedia.org/wiki/Triatl%C3%B3n
+
+18. Utilizando la gema https://github.com/tilo/smarter_csv , importe los datos del alumnado. Mostrar en pantalla una lista con el siguiente formato:
+
+
+
+| Nombre  | Apellido | Nota 1er Parcial | Nota 2do Parcial | Promedio | Estado |
+| ---------- | --------- | --------- |--------- | --------- | --------- |
+| Martin  | Garcia | 4 | 8 | 6 | Desaprobado |
+| Juan  | Grimoldi | 4 | 10 | 7 | Aprobado |
+
+
+Tareas:
+1) Generar un gemfile
+2) Tener un partial y un layout y usarlo para el Hello.rb
+3) Clonar repo "Que comemos hoy"

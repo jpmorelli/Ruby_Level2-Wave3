@@ -1,0 +1,37 @@
+
+# Creacion_cochera
+SLOTS=75
+parking=Parking.new(SLOTS)
+
+# Estaciono autos
+car = Car.new("AAA111","FORD")
+parking.park_in(car)
+car = Car.new("BBB222","FORD")
+parking.park_in(car)
+car = Car.new("CCC333","VW")
+parking.park_in(car)
+car = Car.new("DDD444","FORD")
+parking.park_in(car)
+car = Car.new("EEE555","VW")
+parking.park_in(car)
+car = Car.new("FFF666","CHEVROLET")
+parking.park_in(car)
+car = Car.new("GGG777","FORD")
+parking.park_in(car)
+car = Car.new("HHH888","FIAT")
+parking.park_in(car)
+
+#Hay lugar?
+parking.is_full?
+
+#Ingresa auto al estacionamiento
+parking.park_in(car)
+
+#Porcentaje de ocupación
+parking.occupancy
+
+#Lugares disponibles
+parking.free_capacity
+
+#Saco auto del estacionamiento
+parking.park_out("AAA111")

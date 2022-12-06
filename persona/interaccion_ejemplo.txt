@@ -1,0 +1,8 @@
+
+persona=Persona.new('22706648','Juan','Morelli',false)
+
+
+
+persona.agregar_cuenta('Nacion')
+persona.agregar_cuenta('Provincia')
+persona.agregar_cuenta('Ciudad')
